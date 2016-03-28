@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Shawn Lindsey : Website for Shawn Lindsey">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Active Record Outside of Rails - Shawn Lindsey</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/slindsey3000">View on GitHub</a>
+
+          <h1 id="project_title">Shawn Lindsey</h1>
+          <h2 id="project_tagline">Welcome. I like Ruby, Rails, Javascript and other stuff.</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+      </section>
+      <section>
+        <h2>Active Record Outside of Rails - Setup</h2>
+              <div >
+                Posted on March 9th, 2016.
+              </div>
+          </header>
+      </section>
+      <section>
+        <p>
+         Sometimes it's nice to set up Active Record outside of Rails. It's really quite easy.  
+        </p>
+        <p>
+          <a href="https://github.com/slindsey3000/ContactManager">github.com/slindsey3000/ContactManager<a>
+        </p>
+        <p>
+          The above repo will get you going fast with Active Record in a Ruby app. Just 
+          <ol>
+            <li>Clone the repo above with<br/>> git clone https://github.com/slindsey3000/ContactManager.git </li>
+            <li>>bundle install</li>
+            <li>>rake db:migrate RAILS_ENV=production</li>
+            <li>that's it!</li>
+          </ol>
+        </p>
+        <p>
+          You can look through <a href="https://github.com/slindsey3000/ContactManager/blob/master/contact_manager.rb">https://github.com/slindsey3000/ContactManager/blob/master/contact_manager.rb</a> to see where all the action is.
+        </p>
+        <p>
+          The gem standalone_migrations lets you use normal migrations (like in Rails). This uses a sqlite3 db (but you could use another)
+        </p>
+        <p>
+          Check out Gemfile in the repo
+        </p>
+        <p>
+          > ruby contact_manager.rb setup // runs the program for the first time and sets up the DB (see the code) <br/>
+          > ruby contact_manager.rb // runs the program the rest of the time <br/>
+          > contacts L // When the program is running type this in to see it working (real exciting) <br/>
+          > contacts email LisaESauceda@armyspy.com // Type this in to see other 'features' of this program <br/>
+          > exit // will end the program <br/>
+        </p>
+
+        <p>
+          Really just look through the very small repo to see how it works. Have fun!
+        </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
